@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    background: hsl(220, 22%, 16%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(50% 50%);
+    overflow: hidden;
+}
+body .quad {
+    margin-right: 90px;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background: greenyellow;
+    box-shadow: 0 0 20px greenyellow,
+    0 0 40px greenyellow,
+    0 0 60px greenyellow;
+    border-radius: 10%;
+    transition: background .3s ease-in-out,
+    box-shadow .3s ease-in-out;
+    cursor: grab;
+}
+body .quad::after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: black;
+    top: 30px;
+    left: 17px;
+    -webkit-box-reflect: right 36px;
+}
+body .quad::before {
+    content: '';
+    position: absolute;
+    top: 65px;
+    left: 20px;
+    width: 60px;
+    height: 5px;
+    background: black;
+    border-radius: 0;
+    transition: height .05s ease-in-out;
+}
+body .quad:hover {    
+    background: rgb(98, 0, 255);
+    box-shadow: 0 0 20px rgb(98, 0, 255),
+    0 0 40px rgb(98, 0, 255),
+    0 0 60px rgb(98, 0, 255);
+    transform: scale(1.4);
+}
+body .quad:hover:before {
+    height: 30px;
+    border-radius: 0 0 50% 50%;
+}
