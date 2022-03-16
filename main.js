@@ -1,4 +1,11 @@
 function arrastarElem(elem) {
+    $(elem).on('mouseenter', () => {
+        $(elem).css('z-index', '1');
+    })
+
+    $(elem).on('mouseleave', () => {
+        $(elem).css('z-index', '0');
+    })
 
     var Y = 'undefined';
     var X = 'undefined';
