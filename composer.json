@@ -1,10 +1,20 @@
 {
     "name": "lucasalexsander/smileface",
     "description": "Projeto apenas para teste",
+    "type": "lybraty",
+    "license": "GPL-3.0-or-later",
     "authors": [
         {
             "name": "Lucas Alexsander",
             "email": "lucaslucaslucas655@gmail.com"
         }
-    ]
+    ],
+    "autoload": {
+        "psr-4": {
+            "LucasAlexsander\\SmileFace\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">7.0"
+    }
 }
