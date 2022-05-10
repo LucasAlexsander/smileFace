@@ -1,0 +1,8 @@
+{
+    "name": "lucasalexsander/amileface",
+    "description": "Projeto apenas para teste",
+    "require": {
+        "php": ">=7.4",
+        "another-vendor/package": "1.*"
+    }
+}
