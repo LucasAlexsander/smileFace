@@ -1,8 +1,10 @@
 {
     "name": "lucasalexsander/smileface",
     "description": "Projeto apenas para teste",
-    "require": {
-        "php": ">=7.4",
-        "another-vendor/package": "1.*"
-    }
+    "authors": [
+        {
+            "name": "Lucas Alexsander",
+            "email": "lucaslucaslucas655@gmail.com"
+        }
+    ],
 }
